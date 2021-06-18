@@ -1,0 +1,23 @@
+
+// https://www.kangaroomusique.de/2018/09/23/how-to-install-mongodb-on-windows-to-run-with-xampp/
+
+
+// https://morioh.com/p/3264375fd68d
+
+
+ // $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017/");
+// var_dump($manager); 
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+$collection = (new MongoDB\Client)->solangi->users;
+
+/*$insertOneResult = $collection->insertOne([
+    'username' => 'admin',
+    'email' => 'admin@example.com',
+    'name' => 'Admin User',
+]);
+
+printf("Inserted %d document(s)\n", $insertOneResult->getInsertedCount());
+
+var_dump($insertOneResult->getInsertedId());*/
